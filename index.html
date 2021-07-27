@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <script src="https://kit.fontawesome.com/4e35796bcb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="search" id="city-search" placeholder="🔍 Search Cities"/>
+        <button type="submit" class="btn btn-primary">Search City</button>
+        <button type="click" class="btn btn-primary" id="current-location">Show current Location</button>
+      </form>
+      <div class="row current-city">
+        <div class="col-6">
+          <h1 id="city"></h1>
+          <h6 id="currentDateTime">Current Date</h6>
+          <h2 id="current-temp"></h2>
+        </div>
+        <div class="col-6"><i class="fas fa-cloud-sun"></i>
+          </div>   
+          <span class="col-4"><h2 id="description"></h2>
+          <span class="col-4"><h6 id="expected-temp-high"></h6></span>  
+          <span class="col-4"><h6 id="expected-temp-low"></h6></span>
+        </span>
+      </div>
+      <hr/>
+     <h3>
+     5-Day Forecast
+      </h3>
+      <div class="row forecast">
+      <div class="col day">
+      <h5>Mon</h5>
+      ☀<br/>
+      17° / 8°
+      </div>
+      <div class="col day">
+      <h5>Tues</h5>
+      🌧<br/>
+      15° / 6°
+      </div>
+      <div class="col day">
+      <h5>Wed</h5>
+      🌩<br/>
+      14° / 5°
+      </div>
+      <div class="col day">
+      <h5>Thurs</h5>
+      ☁<br/>
+      16° / 8°
+      </div>
+      <div class="col day">
+      <h5>Fri</h5>
+      ☀<br/>
+      18° / 10°
+      </div>      
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
